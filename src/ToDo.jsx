@@ -38,9 +38,9 @@ const ToDo = () => {
         localStorage.setItem('lists', JSON.stringify(saveData))
     },[saveData]);
     return (
-        <div className="rounded-2xl w-fit bg-orange-600 mx-auto my-10 p-4">
+        <div className="rounded-2xl w-fit bg-gray-200 mx-auto my-10 p-4">
             <form onSubmit={handleSubmit} className="text-center mb-4 w-full flex flex-col items-center justify-center">
-                <h1 className="text-xl font-semibold mb-2 text-white">To-Do List</h1>
+                <h1 className="text-xl font-semibold mb-2">To-Do List</h1>
                 <div className="flex w-full items-center justify-center">
                 <input
                     type="text"
