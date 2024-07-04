@@ -39,7 +39,7 @@ const ToDo = () => {
     },[saveData]);
     return (
         <div className="rounded-2xl w-fit bg-orange-600 mx-auto my-10 p-4">
-            <form onSubmit={handleSubmit} className="text-center mb-4">
+            <form onSubmit={handleSubmit} className="text-center mb-4 w-full flex flex-col items-center justify-center">
                 <h1 className="text-xl font-semibold mb-2 text-white">To-Do List</h1>
                 <div className="flex w-full items-center justify-center">
                 <input
@@ -47,7 +47,7 @@ const ToDo = () => {
                     required
                     onChange={(e) => setData(e.target.value)}
                     value={data}
-                    className="border-solid w-full border-2 border-r-0 rounded-l-xl outline-none px-4 py-2 bg-white"
+                    className="border-solid w-full border-2 border-r-0 rounded-l-xl outline-none pl-4 py-2 bg-white"
                     placeholder="Enter Your To-Do Task"
                 />
                 <button
@@ -59,7 +59,7 @@ const ToDo = () => {
             </form>
             {
                 saveData.map((item) => (
-                    <table key={item.id} className="mx-auto mb-4 rounded-lg bg-white">
+                    <table key={item.id} className="flex items-center w-full justify-center mb-4 rounded-lg bg-white">
                         <tbody>
                             <tr className="flex gap-4 items-center pr-2 py-2">
                                 <td>
