@@ -47,12 +47,12 @@ const ToDo = () => {
                     required
                     onChange={(e) => setData(e.target.value)}
                     value={data}
-                    className="border-solid border-2 border-r-0 rounded-l-xl outline-none px-4 md:px-6 lg:px-6 py-2 bg-white"
+                    className="border-solid w-full border-2 border-r-0 rounded-l-xl outline-none px-4 py-2 bg-white"
                     placeholder="Enter Your To-Do Task"
                 />
                 <button
                     type="submit"
-                    className="border-solid border-2 border-l-0 rounded-r-xl outline-none px-5 md:px-10 lg:px-10 py-2 font-bold bg-white">
+                    className="border-solid border-2 border-l-0 rounded-r-xl outline-none px-6 py-2 font-bold bg-white">
                     {editData !== null ? "Update" : "Enter"}
                 </button>
                 </div>
