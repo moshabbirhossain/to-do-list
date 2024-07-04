@@ -38,15 +38,16 @@ const ToDo = () => {
         localStorage.setItem('lists', JSON.stringify(saveData))
     },[saveData]);
     return (
-        <div className="box-border max-w-lg rounded-2xl bg-orange-600 mx-auto my-10 p-4">
+        <div className="box-border rounded-2xl w-fit bg-orange-600 mx-auto my-10 p-4">
             <form onSubmit={handleSubmit} className="text-center mb-4">
                 <h1 className="text-xl font-semibold mb-2 text-white">To-Do List</h1>
+                <div className="flex w-full items-center justify-center">
                 <input
                     type="text"
                     required
                     onChange={(e) => setData(e.target.value)}
                     value={data}
-                    className="border-solid border-2 border-r-0 rounded-l-xl outline-none pl-5 md:pl-6 lg:pl-6 pr-6 py-2"
+                    className="border-solid border-2 border-r-0 rounded-l-xl outline-none  md:pl-6 lg:pl-6 lg:pr-6 py-2 bg-white"
                     placeholder="Enter Your To-Do Task"
                 />
                 <button
@@ -54,6 +55,7 @@ const ToDo = () => {
                     className="border-solid border-2 border-l-0 rounded-r-xl outline-none pl-2 md:pl-16 lg:pl-16 pr-6 md:pr-10 lg:pr-10 py-2 font-bold bg-white">
                     {editData !== null ? "Update" : "Enter"}
                 </button>
+                </div>
             </form>
             {
                 saveData.map((item) => (
