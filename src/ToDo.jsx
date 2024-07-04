@@ -46,12 +46,12 @@ const ToDo = () => {
                     required
                     onChange={(e) => setData(e.target.value)}
                     value={data}
-                    className="border-solid border-2 border-r-0 rounded-l-xl outline-none pl-2 md,lg:pl-4 pr-12 py-2"
+                    className="border-solid border-2 border-r-0 rounded-l-xl outline-none pl-5 md:pl-6 lg:pl-6 pr-6 py-2"
                     placeholder="Enter Your To-Do Task"
                 />
                 <button
                     type="submit"
-                    className="border-solid border-2 border-l-0 rounded-r-xl outline-none pl-2 pr-4 md,lg:pr-10 py-2 font-bold bg-white">
+                    className="border-solid border-2 border-l-0 rounded-r-xl outline-none pl-2 md:pl-16 lg:pl-16 pr-6 md:pr-10 lg:pr-10 py-2 font-bold bg-white">
                     {editData !== null ? "Update" : "Enter"}
                 </button>
             </form>
@@ -59,9 +59,9 @@ const ToDo = () => {
                 saveData.map((item) => (
                     <table key={item.id} className="mx-auto mb-4 rounded-lg bg-white">
                         <tbody>
-                            <tr className="flex gap-4 items-center px-1 md,lg:px-6 py-2">
+                            <tr className="flex gap-4 items-center pl-0 md:pl-3 lg:pl-3 pr-2 md:pr-6 lg:pr-6 py-2">
                                 <td>
-                                    <p className="border-solid border-0  rounded-lg px-2 w-24 md,lg:w-36 break-words bg-white font-semibold">
+                                    <p className="border-solid border-0  rounded-lg pl-2 w-24 md:w-36 lg:w-36 break-words bg-white font-semibold">
                                         {item.name}
                                     </p>
                                 </td>
