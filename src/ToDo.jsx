@@ -51,13 +51,13 @@ const ToDo = () => {
                 />
                 <button
                     type="submit"
-                    className="border-solid border-2 border-l-0 rounded-r-xl pl-2 pr-10 py-2 font-bold bg-white">
+                    className="border-solid border-2 border-l-0 rounded-r-xl outline-none pl-2 pr-10 py-2 font-bold bg-white">
                     {editData !== null ? "Update" : "Enter"}
                 </button>
             </form>
             {
                 saveData.map((item) => (
-                    <table key={item.id} className="mx-auto bg-white">
+                    <table key={item.id} className="mx-auto mb-4 rounded-lg bg-white">
                         <tbody>
                             <tr className="flex gap-4 items-center px-6 py-2">
                                 <td>
